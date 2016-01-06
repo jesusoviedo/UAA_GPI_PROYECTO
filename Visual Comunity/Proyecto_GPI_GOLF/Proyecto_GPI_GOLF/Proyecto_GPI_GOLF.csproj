@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F55C85B4-3825-4000-9038-14D33E023FDE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Proyecto_GPI_GOLF</RootNamespace>
+    <AssemblyName>Proyecto_GPI_GOLF</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin2">
+      <HintPath>..\..\..\Componentes Graficos Vb2\Componentes Graficos Vb2\SKIN NET 2010 WIN 7\SkinVS.NET\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm_bibliografia_aut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_bibliografia_aut.Designer.cs">
+      <DependentUpon>frm_bibliografia_aut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_bibliografia_con.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_bibliografia_con.Designer.cs">
+      <DependentUpon>frm_bibliografia_con.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_bibliografia_libro_asi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_bibliografia_libro_asi.Designer.cs">
+      <DependentUpon>frm_bibliografia_libro_asi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_bibliografia_libro_con.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_bibliografia_libro_con.Designer.cs">
+      <DependentUpon>frm_bibliografia_libro_con.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_bibliografia_sol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_bibliografia_sol.Designer.cs">
+      <DependentUpon>frm_bibliografia_sol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_carrera_agr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_carrera_agr.Designer.cs">
+      <DependentUpon>frm_carrera_agr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_carrera_con.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_carrera_con.Designer.cs">
+      <DependentUpon>frm_carrera_con.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_carrera_eli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_carrera_eli.Designer.cs">
+      <DependentUpon>frm_carrera_eli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_carrera_materia_asi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_carrera_materia_asi.Designer.cs">
+      <DependentUpon>frm_carrera_materia_asi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_carrera_materia_con.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_carrera_materia_con.Designer.cs">
+      <DependentUpon>frm_carrera_materia_con.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_carrera_mod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_carrera_mod.Designer.cs">
+      <DependentUpon>frm_carrera_mod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_editorial_agr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_editorial_agr.Designer.cs">
+      <DependentUpon>frm_editorial_agr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_editorial_con.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_editorial_con.Designer.cs">
+      <DependentUpon>frm_editorial_con.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_editorial_eli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_editorial_eli.Designer.cs">
+      <DependentUpon>frm_editorial_eli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_editorial_mod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_editorial_mod.Designer.cs">
+      <DependentUpon>frm_editorial_mod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_libro_agr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_libro_agr.Designer.cs">
+      <DependentUpon>frm_libro_agr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_libro_con.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_libro_con.Designer.cs">
+      <DependentUpon>frm_libro_con.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_libro_eli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_libro_eli.Designer.cs">
+      <DependentUpon>frm_libro_eli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_libro_mod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_libro_mod.Designer.cs">
+      <DependentUpon>frm_libro_mod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_materia_agr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_materia_agr.Designer.cs">
+      <DependentUpon>frm_materia_agr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_materia_con.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_materia_con.Designer.cs">
+      <DependentUpon>frm_materia_con.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_materia_eli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_materia_eli.Designer.cs">
+      <DependentUpon>frm_materia_eli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_materia_mod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_materia_mod.Designer.cs">
+      <DependentUpon>frm_materia_mod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_usuario_cam_cla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_usuario_cam_cla.Designer.cs">
+      <DependentUpon>frm_usuario_cam_cla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_persona_agr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_persona_agr.Designer.cs">
+      <DependentUpon>frm_persona_agr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_persona_con.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_persona_con.Designer.cs">
+      <DependentUpon>frm_persona_con.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_persona_eli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_persona_eli.Designer.cs">
+      <DependentUpon>frm_persona_eli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_pri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_menu_pri.Designer.cs">
+      <DependentUpon>frm_menu_pri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_persona_mod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_persona_mod.Designer.cs">
+      <DependentUpon>frm_persona_mod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_usuario_per.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_usuario_per.Designer.cs">
+      <DependentUpon>frm_usuario_per.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_usuario_per_facultad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_usuario_per_facultad.Designer.cs">
+      <DependentUpon>frm_usuario_per_facultad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_usuario_rec_cla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_usuario_rec_cla.Designer.cs">
+      <DependentUpon>frm_usuario_rec_cla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_usuario_acc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_usuario_acc.Designer.cs">
+      <DependentUpon>frm_usuario_acc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_bibliografia_aut.resx">
+      <DependentUpon>frm_bibliografia_aut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_bibliografia_con.resx">
+      <DependentUpon>frm_bibliografia_con.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_bibliografia_libro_asi.resx">
+      <DependentUpon>frm_bibliografia_libro_asi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_bibliografia_libro_con.resx">
+      <DependentUpon>frm_bibliografia_libro_con.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_bibliografia_sol.resx">
+      <DependentUpon>frm_bibliografia_sol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_carrera_agr.resx">
+      <DependentUpon>frm_carrera_agr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_carrera_con.resx">
+      <DependentUpon>frm_carrera_con.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_carrera_eli.resx">
+      <DependentUpon>frm_carrera_eli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_carrera_materia_asi.resx">
+      <DependentUpon>frm_carrera_materia_asi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_carrera_materia_con.resx">
+      <DependentUpon>frm_carrera_materia_con.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_carrera_mod.resx">
+      <DependentUpon>frm_carrera_mod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_editorial_agr.resx">
+      <DependentUpon>frm_editorial_agr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_editorial_con.resx">
+      <DependentUpon>frm_editorial_con.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_editorial_eli.resx">
+      <DependentUpon>frm_editorial_eli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_editorial_mod.resx">
+      <DependentUpon>frm_editorial_mod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_libro_agr.resx">
+      <DependentUpon>frm_libro_agr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_libro_con.resx">
+      <DependentUpon>frm_libro_con.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_libro_eli.resx">
+      <DependentUpon>frm_libro_eli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_libro_mod.resx">
+      <DependentUpon>frm_libro_mod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_materia_agr.resx">
+      <DependentUpon>frm_materia_agr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_materia_con.resx">
+      <DependentUpon>frm_materia_con.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_materia_eli.resx">
+      <DependentUpon>frm_materia_eli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_materia_mod.resx">
+      <DependentUpon>frm_materia_mod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_persona_agr.resx">
+      <DependentUpon>frm_persona_agr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_persona_con.resx">
+      <DependentUpon>frm_persona_con.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_persona_eli.resx">
+      <DependentUpon>frm_persona_eli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_pri.resx">
+      <DependentUpon>frm_menu_pri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_persona_mod.resx">
+      <DependentUpon>frm_persona_mod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_usuario_per.resx">
+      <DependentUpon>frm_usuario_per.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_usuario_per_facultad.resx">
+      <DependentUpon>frm_usuario_per_facultad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_usuario_rec_cla.resx">
+      <DependentUpon>frm_usuario_rec_cla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_usuario_acc.resx">
+      <DependentUpon>frm_usuario_acc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_usuario_cam_cla.resx">
+      <DependentUpon>frm_usuario_cam_cla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DatosSQL\Datos.csproj">
+      <Project>{1020a1c5-1fe4-4bf0-b923-3c89ea1a8d3f}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Usuario_logica\Usuario_logica.csproj">
+      <Project>{e8cd0e3a-2060-418c-9d6c-0d37889b8ac3}</Project>
+      <Name>Usuario_logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help_Bubble_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cogwheels_laptop_wallpaper_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help_Bubble_24.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

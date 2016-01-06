@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proyecto_GPI_GOLF", "Proyecto_GPI_GOLF\Proyecto_GPI_GOLF.csproj", "{F55C85B4-3825-4000-9038-14D33E023FDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "DatosSQL\Datos.csproj", "{1020A1C5-1FE4-4BF0-B923-3C89EA1A8D3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Usuario_logica", "Usuario_logica\Usuario_logica.csproj", "{E8CD0E3A-2060-418C-9D6C-0D37889B8AC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F55C85B4-3825-4000-9038-14D33E023FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F55C85B4-3825-4000-9038-14D33E023FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F55C85B4-3825-4000-9038-14D33E023FDE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F55C85B4-3825-4000-9038-14D33E023FDE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F55C85B4-3825-4000-9038-14D33E023FDE}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{F55C85B4-3825-4000-9038-14D33E023FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F55C85B4-3825-4000-9038-14D33E023FDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F55C85B4-3825-4000-9038-14D33E023FDE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F55C85B4-3825-4000-9038-14D33E023FDE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F55C85B4-3825-4000-9038-14D33E023FDE}.Release|Win32.ActiveCfg = Release|Any CPU
+		{1020A1C5-1FE4-4BF0-B923-3C89EA1A8D3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1020A1C5-1FE4-4BF0-B923-3C89EA1A8D3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1020A1C5-1FE4-4BF0-B923-3C89EA1A8D3F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1020A1C5-1FE4-4BF0-B923-3C89EA1A8D3F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1020A1C5-1FE4-4BF0-B923-3C89EA1A8D3F}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{1020A1C5-1FE4-4BF0-B923-3C89EA1A8D3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1020A1C5-1FE4-4BF0-B923-3C89EA1A8D3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1020A1C5-1FE4-4BF0-B923-3C89EA1A8D3F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1020A1C5-1FE4-4BF0-B923-3C89EA1A8D3F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1020A1C5-1FE4-4BF0-B923-3C89EA1A8D3F}.Release|Win32.ActiveCfg = Release|Any CPU
+		{E8CD0E3A-2060-418C-9D6C-0D37889B8AC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8CD0E3A-2060-418C-9D6C-0D37889B8AC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8CD0E3A-2060-418C-9D6C-0D37889B8AC3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E8CD0E3A-2060-418C-9D6C-0D37889B8AC3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E8CD0E3A-2060-418C-9D6C-0D37889B8AC3}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{E8CD0E3A-2060-418C-9D6C-0D37889B8AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8CD0E3A-2060-418C-9D6C-0D37889B8AC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8CD0E3A-2060-418C-9D6C-0D37889B8AC3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E8CD0E3A-2060-418C-9D6C-0D37889B8AC3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E8CD0E3A-2060-418C-9D6C-0D37889B8AC3}.Release|Win32.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
