@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2015-05-21" view-index="0" gantt-divider-location="376" resource-divider-location="300" version="2.0" locale="es">
+    <description/>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="100" order="0"/>
+        <option id="taskLabelUp" value="advancement"/>
+        <option id="taskLabelLeft" value="name"/>
+        <option id="taskLabelRight" value="resources"/>
+        <timeline><![CDATA[299]]></timeline>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="50" order="0"/>
+        <field id="1" name="Función" width="50" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <calendar id="1" name="default">
+                <default-week sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+                <only-show-weekends value="false"/>
+                <overriden-day-types/>
+                <days/>
+            </calendar>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="INICIO" color="#000000" meeting="false" start="2015-05-11" duration="1" complete="100" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Rubber"/>
+            <task id="2" name="Desarrollar el Acta de Constitución del Proyecto" color="#8cb6ce" meeting="false" start="2015-05-11" duration="1" complete="100" expand="true"/>
+            <task id="3" name="Aprobar el Acta de Constitución del Proyecto" color="#8cb6ce" meeting="true" start="2015-05-11" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="1" name="PLANIFICACIÓN" color="#000000" meeting="false" start="2015-05-12" duration="1" complete="100" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Rubber"/>
+            <task id="4" name="Elaborar el Cronograma de actividades del Proyecto" color="#8cb6ce" meeting="false" start="2015-05-12" duration="1" complete="100" expand="true"/>
+            <task id="74" name="Aprobar el Cronograma de actividades del Proyecto" color="#8cb6ce" meeting="true" start="2015-05-12" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="5" name="EJECUCIÓN" color="#000000" meeting="false" start="2015-05-13" duration="20" complete="0" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Rubber"/>
+            <task id="10" name="Área de negocio: USUARIO" color="#8cb6ce" meeting="false" start="2015-05-13" duration="4" complete="0" expand="true">
+                <depend id="169" type="2" difference="0" hardness="Rubber"/>
+                <task id="112" name="Análisis del Área de negocio: USUARIO" color="#000000" meeting="false" start="2015-05-13" duration="1" complete="0" expand="true">
+                    <depend id="113" type="2" difference="0" hardness="Strong"/>
+                    <task id="125" name="Realizar Encuestas Área de negocio: USUARIO" color="#8cb6ce" meeting="false" start="2015-05-13" duration="1" complete="0" expand="true"/>
+                    <task id="126" name="Realizar Entrevistas Área de negocio: USUARIO" color="#8cb6ce" meeting="false" start="2015-05-13" duration="1" complete="0" expand="true"/>
+                    <task id="127" name="Realizar Tormentas de Ideas Área de negocio: USUARIO" color="#8cb6ce" meeting="false" start="2015-05-13" duration="1" complete="0" expand="true"/>
+                    <task id="128" name="Fin del Análisis del Área de negocio: USUARIO" color="#8cb6ce" meeting="true" start="2015-05-13" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="113" name="Diseño del Área de negocio: USUARIO" color="#000000" meeting="false" start="2015-05-14" duration="1" complete="0" expand="true">
+                    <depend id="114" type="2" difference="0" hardness="Strong"/>
+                    <task id="135" name="Estructura de datos del Área de negocio: USUARIO" color="#8cb6ce" meeting="false" start="2015-05-14" duration="1" complete="0" expand="true">
+                        <task id="146" name="Diseñar Diagrama de entidad relación (DER) del Área de negocio: USUARIO" color="#8cb6ce" meeting="false" start="2015-05-14" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="134" name="Programas del Área de negocio: USUARIO" color="#8cb6ce" meeting="false" start="2015-05-14" duration="1" complete="0" expand="true">
+                        <task id="144" name="Diseñar Diagrama de casos de uso del Área de negocio: USUARIO" color="#8cb6ce" meeting="false" start="2015-05-14" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="136" name="Documentación del Área de negocio: USUARIO" color="#8cb6ce" meeting="false" start="2015-05-14" duration="1" complete="0" expand="true">
+                        <task id="148" name="Elaborar Manuales del Área de negocio: USUARIO" color="#8cb6ce" meeting="false" start="2015-05-14" duration="1" complete="0" expand="true"/>
+                        <task id="149" name="Elaborar Instructivos del Área de negocio: USUARIO" color="#8cb6ce" meeting="false" start="2015-05-14" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="137" name="Fin del Diseño del Área de negocio: USUARIO" color="#8cb6ce" meeting="true" start="2015-05-14" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="114" name="Codificación de las aplicaciones del Área de negocio: USUARIO" color="#000000" meeting="false" start="2015-05-15" duration="1" complete="0" expand="true">
+                    <depend id="115" type="2" difference="0" hardness="Strong"/>
+                    <task id="155" name="Crear la estructura de datos de las aplicaciones del Área de negocio: USUARIO" color="#8cb6ce" meeting="false" start="2015-05-15" duration="1" complete="0" expand="true"/>
+                    <task id="154" name="Crear la arquitectura de las aplicaciones del Área de negocio: USUARIO" color="#8cb6ce" meeting="false" start="2015-05-15" duration="1" complete="0" expand="true"/>
+                    <task id="153" name="Crear el entorno grafico de las aplicaciones del Área de negocio: USUARIO" color="#8cb6ce" meeting="false" start="2015-05-15" duration="1" complete="0" expand="true"/>
+                    <task id="156" name="Fin de la Codificación de las aplicaciones del Área de negocio: USUARIO" color="#8cb6ce" meeting="true" start="2015-05-15" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="115" name="Pruebas de las aplicaciones del Área de negocio: USUARIO" color="#000000" meeting="false" start="2015-05-18" duration="1" complete="0" expand="true">
+                    <task id="163" name="Realizar pruebas de las aplicaciones del Área de negocio: USUARIO" color="#8cb6ce" meeting="false" start="2015-05-18" duration="1" complete="0" expand="true"/>
+                    <task id="164" name="Aprobar las pruebas de las aplicaciones del Área de negocio: USUARIO" color="#8cb6ce" meeting="true" start="2015-05-18" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="214" name="Fin Área de Negocio USUARIO" color="#8cb6ce" meeting="true" start="2015-05-18" duration="0" complete="0" expand="true"/>
+            </task>
+            <task id="169" name="Área de negocio: PERSONA" color="#8cb6ce" meeting="false" start="2015-05-19" duration="4" complete="0" expand="true">
+                <depend id="226" type="2" difference="0" hardness="Rubber"/>
+                <depend id="293" type="2" difference="0" hardness="Rubber"/>
+                <task id="171" name="Análisis del Área de negocio: PERSONA" color="#000000" meeting="false" start="2015-05-19" duration="1" complete="0" expand="true">
+                    <depend id="181" type="2" difference="0" hardness="Strong"/>
+                    <task id="173" name="Realizar Encuestas Área de negocio: PERSONA" color="#8cb6ce" meeting="false" start="2015-05-19" duration="1" complete="0" expand="true"/>
+                    <task id="175" name="Realizar Entrevistas Área de negocio: PERSONA" color="#8cb6ce" meeting="false" start="2015-05-19" duration="1" complete="0" expand="true"/>
+                    <task id="177" name="Realizar Tormentas de Ideas Área de negocio: PERSONA" color="#8cb6ce" meeting="false" start="2015-05-19" duration="1" complete="0" expand="true"/>
+                    <task id="179" name="Fin del Análisis del Área de negocio: PERSONA" color="#8cb6ce" meeting="true" start="2015-05-19" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="181" name="Diseño del Área de negocio: PERSONA" color="#000000" meeting="false" start="2015-05-20" duration="1" complete="0" expand="true">
+                    <depend id="199" type="2" difference="0" hardness="Strong"/>
+                    <task id="183" name="Estructura de datos del Área de negocio: PERSONA" color="#8cb6ce" meeting="false" start="2015-05-20" duration="1" complete="0" expand="true">
+                        <task id="185" name="Diseñar Diagrama de entidad relación (DER) del Área de negocio: PERSONA" color="#8cb6ce" meeting="false" start="2015-05-20" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="187" name="Programas del Área de negocio: PERSONA" color="#8cb6ce" meeting="false" start="2015-05-20" duration="1" complete="0" expand="true">
+                        <task id="189" name="Diseñar Diagrama de casos de uso del Área de negocio: PERSONA" color="#8cb6ce" meeting="false" start="2015-05-20" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="191" name="Documentación del Área de negocio: PERSONA" color="#8cb6ce" meeting="false" start="2015-05-20" duration="1" complete="0" expand="true">
+                        <task id="193" name="Elaborar Manuales del Área de negocio: PERSONA" color="#8cb6ce" meeting="false" start="2015-05-20" duration="1" complete="0" expand="true"/>
+                        <task id="195" name="Elaborar Instructivos del Área de negocio: PERSONA" color="#8cb6ce" meeting="false" start="2015-05-20" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="197" name="Fin del Diseño del Área de negocio: PERSONA" color="#8cb6ce" meeting="true" start="2015-05-20" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="199" name="Codificación de las aplicaciones del Área de negocio: PERSONA" color="#000000" meeting="false" start="2015-05-21" duration="1" complete="0" expand="true">
+                    <depend id="209" type="2" difference="0" hardness="Strong"/>
+                    <task id="201" name="Crear la estructura de datos de las aplicaciones del Área de negocio: PERSONA" color="#8cb6ce" meeting="false" start="2015-05-21" duration="1" complete="0" expand="true"/>
+                    <task id="203" name="Crear la arquitectura de las aplicaciones del Área de negocio: PERSONA" color="#8cb6ce" meeting="false" start="2015-05-21" duration="1" complete="0" expand="true"/>
+                    <task id="205" name="Crear el entorno grafico de las aplicaciones del Área de negocio: PERSONA" color="#8cb6ce" meeting="false" start="2015-05-21" duration="1" complete="0" expand="true"/>
+                    <task id="207" name="Fin de la Codificación de las aplicaciones del Área de negocio: PERSONA" color="#8cb6ce" meeting="true" start="2015-05-21" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="209" name="Pruebas de las aplicaciones del Área de negocio: PERSONA" color="#000000" meeting="false" start="2015-05-22" duration="1" complete="0" expand="true">
+                    <task id="211" name="Realizar pruebas de las aplicaciones del Área de negocio: PERSONA" color="#8cb6ce" meeting="false" start="2015-05-22" duration="1" complete="0" expand="true"/>
+                    <task id="213" name="Aprobar las pruebas de las aplicaciones del Área de negocio: PERSONA" color="#8cb6ce" meeting="true" start="2015-05-22" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="271" name="Fin Área de Negocio PERSONA" color="#8cb6ce" meeting="true" start="2015-05-22" duration="0" complete="0" expand="true"/>
+            </task>
+            <task id="226" name="Área de negocio: CARRERA" color="#8cb6ce" meeting="false" start="2015-05-25" duration="4" complete="0" expand="true">
+                <depend id="360" type="2" difference="0" hardness="Rubber"/>
+                <task id="228" name="Análisis del Área de negocio: CARRERA" color="#000000" meeting="false" start="2015-05-25" duration="1" complete="0" expand="true">
+                    <depend id="238" type="2" difference="0" hardness="Strong"/>
+                    <task id="230" name="Realizar Encuestas Área de negocio: CARRERA" color="#8cb6ce" meeting="false" start="2015-05-25" duration="1" complete="0" expand="true"/>
+                    <task id="232" name="Realizar Entrevistas Área de negocio: CARRERA" color="#8cb6ce" meeting="false" start="2015-05-25" duration="1" complete="0" expand="true"/>
+                    <task id="234" name="Realizar Tormentas de Ideas Área de negocio: CARRERA" color="#8cb6ce" meeting="false" start="2015-05-25" duration="1" complete="0" expand="true"/>
+                    <task id="236" name="Fin del Análisis del Área de negocio: CARRERA" color="#8cb6ce" meeting="true" start="2015-05-25" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="238" name="Diseño del Área de negocio: CARRERA" color="#000000" meeting="false" start="2015-05-26" duration="1" complete="0" expand="true">
+                    <depend id="256" type="2" difference="0" hardness="Strong"/>
+                    <task id="240" name="Estructura de datos del Área de negocio: CARRERA" color="#8cb6ce" meeting="false" start="2015-05-26" duration="1" complete="0" expand="true">
+                        <task id="242" name="Diseñar Diagrama de entidad relación (DER) del Área de negocio: CARRERA" color="#8cb6ce" meeting="false" start="2015-05-26" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="244" name="Programas del Área de negocio: CARRERA" color="#8cb6ce" meeting="false" start="2015-05-26" duration="1" complete="0" expand="true">
+                        <task id="246" name="Diseñar Diagrama de casos de uso del Área de negocio: CARRERA" color="#8cb6ce" meeting="false" start="2015-05-26" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="248" name="Documentación del Área de negocio: CARRERA" color="#8cb6ce" meeting="false" start="2015-05-26" duration="1" complete="0" expand="true">
+                        <task id="250" name="Elaborar Manuales del Área de negocio: CARRERA" color="#8cb6ce" meeting="false" start="2015-05-26" duration="1" complete="0" expand="true"/>
+                        <task id="252" name="Elaborar Instructivos del Área de negocio: CARRERA" color="#8cb6ce" meeting="false" start="2015-05-26" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="254" name="Fin del Diseño del Área de negocio: CARRERA" color="#8cb6ce" meeting="true" start="2015-05-26" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="256" name="Codificación de las aplicaciones del Área de negocio: CARRERA" color="#000000" meeting="false" start="2015-05-27" duration="1" complete="0" expand="true">
+                    <depend id="266" type="2" difference="0" hardness="Strong"/>
+                    <task id="258" name="Crear la estructura de datos de las aplicaciones del Área de negocio: CARRERA" color="#8cb6ce" meeting="false" start="2015-05-27" duration="1" complete="0" expand="true"/>
+                    <task id="260" name="Crear la arquitectura de las aplicaciones del Área de negocio: CARRERA" color="#8cb6ce" meeting="false" start="2015-05-27" duration="1" complete="0" expand="true"/>
+                    <task id="262" name="Crear el entorno grafico de las aplicaciones del Área de negocio: CARRERA" color="#8cb6ce" meeting="false" start="2015-05-27" duration="1" complete="0" expand="true"/>
+                    <task id="264" name="Fin de la Codificación de las aplicaciones del Área de negocio: CARRERA" color="#8cb6ce" meeting="true" start="2015-05-27" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="266" name="Pruebas de las aplicaciones del Área de negocio: CARRERA" color="#000000" meeting="false" start="2015-05-28" duration="1" complete="0" expand="true">
+                    <task id="268" name="Realizar pruebas de las aplicaciones del Área de negocio: CARRERA" color="#8cb6ce" meeting="false" start="2015-05-28" duration="1" complete="0" expand="true"/>
+                    <task id="270" name="Aprobar las pruebas de las aplicaciones del Área de negocio: CARRERA" color="#8cb6ce" meeting="true" start="2015-05-28" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="289" name="Fin Área de Negocio CARRERA" color="#8cb6ce" meeting="true" start="2015-05-28" duration="0" complete="0" expand="true"/>
+            </task>
+            <task id="293" name="Área de negocio: LIBRO" color="#8cb6ce" meeting="false" start="2015-05-29" duration="4" complete="0" expand="true">
+                <depend id="360" type="2" difference="0" hardness="Rubber"/>
+                <task id="295" name="Análisis del Área de negocio: LIBRO" color="#000000" meeting="false" start="2015-05-29" duration="1" complete="0" expand="true">
+                    <depend id="305" type="2" difference="0" hardness="Strong"/>
+                    <task id="297" name="Realizar Encuestas Área de negocio: LIBRO" color="#8cb6ce" meeting="false" start="2015-05-29" duration="1" complete="0" expand="true"/>
+                    <task id="299" name="Realizar Entrevistas Área de negocio: LIBRO" color="#8cb6ce" meeting="false" start="2015-05-29" duration="1" complete="0" expand="true"/>
+                    <task id="301" name="Realizar Tormentas de Ideas Área de negocio: LIBRO" color="#8cb6ce" meeting="false" start="2015-05-29" duration="1" complete="0" expand="true"/>
+                    <task id="303" name="Fin del Análisis del Área de negocio: LIBRO" color="#8cb6ce" meeting="true" start="2015-05-29" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="305" name="Diseño del Área de negocio: LIBRO" color="#000000" meeting="false" start="2015-06-01" duration="1" complete="0" expand="true">
+                    <depend id="323" type="2" difference="0" hardness="Strong"/>
+                    <task id="307" name="Estructura de datos del Área de negocio: LIBRO" color="#8cb6ce" meeting="false" start="2015-06-01" duration="1" complete="0" expand="true">
+                        <task id="309" name="Diseñar Diagrama de entidad relación (DER) del Área de negocio: LIBRO" color="#8cb6ce" meeting="false" start="2015-06-01" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="311" name="Programas del Área de negocio: LIBRO" color="#8cb6ce" meeting="false" start="2015-06-01" duration="1" complete="0" expand="true">
+                        <task id="313" name="Diseñar Diagrama de casos de uso del Área de negocio: LIBRO" color="#8cb6ce" meeting="false" start="2015-06-01" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="315" name="Documentación del Área de negocio: LIBRO" color="#8cb6ce" meeting="false" start="2015-06-01" duration="1" complete="0" expand="true">
+                        <task id="317" name="Elaborar Manuales del Área de negocio: LIBRO" color="#8cb6ce" meeting="false" start="2015-06-01" duration="1" complete="0" expand="true"/>
+                        <task id="319" name="Elaborar Instructivos del Área de negocio: LIBRO" color="#8cb6ce" meeting="false" start="2015-06-01" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="321" name="Fin del Diseño del Área de negocio: LIBRO" color="#8cb6ce" meeting="true" start="2015-06-01" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="323" name="Codificación de las aplicaciones del Área de negocio: LIBRO" color="#000000" meeting="false" start="2015-06-02" duration="1" complete="0" expand="true">
+                    <depend id="333" type="2" difference="0" hardness="Strong"/>
+                    <task id="325" name="Crear la estructura de datos de las aplicaciones del Área de negocio: LIBRO" color="#8cb6ce" meeting="false" start="2015-06-02" duration="1" complete="0" expand="true"/>
+                    <task id="327" name="Crear la arquitectura de las aplicaciones del Área de negocio: LIBRO" color="#8cb6ce" meeting="false" start="2015-06-02" duration="1" complete="0" expand="true"/>
+                    <task id="329" name="Crear el entorno grafico de las aplicaciones del Área de negocio: LIBRO" color="#8cb6ce" meeting="false" start="2015-06-02" duration="1" complete="0" expand="true"/>
+                    <task id="331" name="Fin de la Codificación de las aplicaciones del Área de negocio: LIBRO" color="#8cb6ce" meeting="true" start="2015-06-02" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="333" name="Pruebas de las aplicaciones del Área de negocio: LIBRO" color="#000000" meeting="false" start="2015-06-03" duration="1" complete="0" expand="true">
+                    <task id="335" name="Realizar pruebas de las aplicaciones del Área de negocio: LIBRO" color="#8cb6ce" meeting="false" start="2015-06-03" duration="1" complete="0" expand="true"/>
+                    <task id="337" name="Aprobar las pruebas de las aplicaciones del Área de negocio: LIBRO" color="#8cb6ce" meeting="true" start="2015-06-03" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="339" name="Fin Área de Negocio LIBRO" color="#8cb6ce" meeting="true" start="2015-06-03" duration="0" complete="0" expand="true"/>
+            </task>
+            <task id="360" name="Área de negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="false" start="2015-06-04" duration="4" complete="0" expand="true">
+                <task id="362" name="Análisis del Área de negocio:  BIBLIOGRAFÍA" color="#000000" meeting="false" start="2015-06-04" duration="1" complete="0" expand="true">
+                    <depend id="372" type="2" difference="0" hardness="Strong"/>
+                    <task id="364" name="Realizar Encuestas Área de negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="false" start="2015-06-04" duration="1" complete="0" expand="true"/>
+                    <task id="366" name="Realizar Entrevistas Área de negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="false" start="2015-06-04" duration="1" complete="0" expand="true"/>
+                    <task id="368" name="Realizar Tormentas de Ideas Área de negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="false" start="2015-06-04" duration="1" complete="0" expand="true"/>
+                    <task id="370" name="Fin del Análisis del Área de negocio: LIBRO" color="#8cb6ce" meeting="true" start="2015-06-04" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="372" name="Diseño del Área de negocio:  BIBLIOGRAFÍA" color="#000000" meeting="false" start="2015-06-05" duration="1" complete="0" expand="true">
+                    <depend id="390" type="2" difference="0" hardness="Strong"/>
+                    <task id="374" name="Estructura de datos del Área de negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="false" start="2015-06-05" duration="1" complete="0" expand="true">
+                        <task id="376" name="Diseñar Diagrama de entidad relación (DER) del Área de negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="false" start="2015-06-05" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="378" name="Programas del Área de negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="false" start="2015-06-05" duration="1" complete="0" expand="true">
+                        <task id="380" name="Diseñar Diagrama de casos de uso del Área de negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="false" start="2015-06-05" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="382" name="Documentación del Área de negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="false" start="2015-06-05" duration="1" complete="0" expand="true">
+                        <task id="384" name="Elaborar Manuales del Área de negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="false" start="2015-06-05" duration="1" complete="0" expand="true"/>
+                        <task id="386" name="Elaborar Instructivos del Área de negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="false" start="2015-06-05" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="388" name="Fin del Diseño del Área de negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="true" start="2015-06-05" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="390" name="Codificación de las aplicaciones del Área de negocio:  BIBLIOGRAFÍA" color="#000000" meeting="false" start="2015-06-08" duration="1" complete="0" expand="true">
+                    <depend id="400" type="2" difference="0" hardness="Strong"/>
+                    <task id="392" name="Crear la estructura de datos de las aplicaciones del Área de negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="false" start="2015-06-08" duration="1" complete="0" expand="true"/>
+                    <task id="394" name="Crear la arquitectura de las aplicaciones del Área de negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="false" start="2015-06-08" duration="1" complete="0" expand="true"/>
+                    <task id="396" name="Crear el entorno grafico de las aplicaciones del Área de negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="false" start="2015-06-08" duration="1" complete="0" expand="true"/>
+                    <task id="398" name="Fin de la Codificación de las aplicaciones del Área de negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="true" start="2015-06-08" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="400" name="Pruebas de las aplicaciones del Área de negocio:  BIBLIOGRAFÍA" color="#000000" meeting="false" start="2015-06-09" duration="1" complete="0" expand="true">
+                    <task id="402" name="Realizar pruebas de las aplicaciones del Área de negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="false" start="2015-06-09" duration="1" complete="0" expand="true"/>
+                    <task id="404" name="Aprobar las pruebas de las aplicaciones del Área de negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="true" start="2015-06-09" duration="0" complete="0" expand="true"/>
+                </task>
+                <task id="406" name="Fin Área de Negocio  BIBLIOGRAFÍA" color="#8cb6ce" meeting="true" start="2015-06-09" duration="0" complete="0" expand="true"/>
+            </task>
+            <task id="83" name="Fin de la EJECUCIÓN  del Proyecto" color="#8cb6ce" meeting="true" start="2015-06-09" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="6" name="SEGUIMIENTO Y CONTROL" color="#000000" meeting="false" start="2015-06-10" duration="3" complete="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Rubber"/>
+            <task id="40" name="1ra Reunión Seguimiento y Control – 23/06/2015" color="#8cb6ce" meeting="false" start="2015-06-10" duration="1" complete="0" expand="true">
+                <depend id="435" type="2" difference="0" hardness="Rubber"/>
+                <task id="417" name="Presentar Cronograma N°1 actualizado con los porcentajes de avances y cambios necesarios detectados" color="#8cb6ce" meeting="false" start="2015-06-10" duration="1" complete="0" expand="true"/>
+                <task id="418" name="Presentar Informe N°1 de avance del Proyecto" color="#8cb6ce" meeting="false" start="2015-06-10" duration="1" complete="0" expand="true"/>
+                <task id="419" name="Presentar Informe N°1 de inconvenientes y divergencias detectadas en el avance del Proyecto" color="#8cb6ce" meeting="false" start="2015-06-10" duration="1" complete="0" expand="true"/>
+                <task id="420" name="Presentar Informe N°1 de seguimiento de Riesgos" color="#8cb6ce" meeting="false" start="2015-06-10" duration="1" complete="0" expand="true"/>
+                <task id="421" name="Presentación de los entregables de las Áreas de Negocio: USUARIO y PERSONA" color="#8cb6ce" meeting="false" start="2015-06-10" duration="1" complete="0" expand="true"/>
+                <task id="422" name="Aprobación de los entregables de las Áreas de Negocio: USUARIO y PERSONA" color="#8cb6ce" meeting="true" start="2015-06-10" duration="0" complete="0" expand="true"/>
+            </task>
+            <task id="435" name="2da Reunión Seguimiento y Control – 30/06/2015" color="#8cb6ce" meeting="false" start="2015-06-11" duration="1" complete="0" expand="true">
+                <depend id="454" type="2" difference="0" hardness="Rubber"/>
+                <task id="437" name="Presentar Cronograma N°2 actualizado con los porcentajes de avances y cambios necesarios detectados" color="#8cb6ce" meeting="false" start="2015-06-11" duration="1" complete="0" expand="true"/>
+                <task id="439" name="Presentar Informe N°2 de avance del Proyecto" color="#8cb6ce" meeting="false" start="2015-06-11" duration="1" complete="0" expand="true"/>
+                <task id="441" name="Presentar Informe N°2 de inconvenientes y divergencias detectadas en el avance del Proyecto" color="#8cb6ce" meeting="false" start="2015-06-11" duration="1" complete="0" expand="true"/>
+                <task id="443" name="Presentar Informe N°2 de seguimiento de Riesgos" color="#8cb6ce" meeting="false" start="2015-06-11" duration="1" complete="0" expand="true"/>
+                <task id="445" name="Presentación de los entregables de las Áreas de Negocio: CARRERA y LIBRO" color="#8cb6ce" meeting="false" start="2015-06-11" duration="1" complete="0" expand="true"/>
+                <task id="447" name="Aprobación de los entregables de las Áreas de Negocio: CARRERA y LIBRO" color="#8cb6ce" meeting="true" start="2015-06-11" duration="0" complete="0" expand="true"/>
+            </task>
+            <task id="454" name="3ra Reunión Seguimiento y Control– 07/07/2015" color="#8cb6ce" meeting="false" start="2015-06-12" duration="1" complete="0" expand="true">
+                <task id="456" name="Presentar Cronograma N°3 actualizado con los porcentajes de avances y cambios necesarios detectados" color="#8cb6ce" meeting="false" start="2015-06-12" duration="1" complete="0" expand="true"/>
+                <task id="458" name="Presentar Informe N°3 de avance del Proyecto" color="#8cb6ce" meeting="false" start="2015-06-12" duration="1" complete="0" expand="true"/>
+                <task id="460" name="Presentar Informe N°3 de inconvenientes y divergencias detectadas en el avance del Proyecto" color="#8cb6ce" meeting="false" start="2015-06-12" duration="1" complete="0" expand="true"/>
+                <task id="462" name="Presentar Informe N°3 de seguimiento de Riesgos" color="#8cb6ce" meeting="false" start="2015-06-12" duration="1" complete="0" expand="true"/>
+                <task id="464" name="Presentación del entregable del Área de Negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="false" start="2015-06-12" duration="1" complete="0" expand="true"/>
+                <task id="466" name="Aprobación del entregable del Área de Negocio:  BIBLIOGRAFÍA" color="#8cb6ce" meeting="true" start="2015-06-12" duration="0" complete="0" expand="true"/>
+            </task>
+            <task id="450" name="Fin del SEGUIMIENTO Y CONTROL del Proyecto" color="#8cb6ce" meeting="true" start="2015-06-12" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="7" name="CIERRE" color="#000000" meeting="false" start="2015-06-15" duration="1" complete="0" expand="true">
+            <task id="58" name="Presentar el Informe de cierre del Proyecto" color="#8cb6ce" meeting="false" start="2015-06-15" duration="1" complete="0" expand="true"/>
+            <task id="57" name="Presentar el Software íntegro y funcional" color="#8cb6ce" meeting="false" start="2015-06-15" duration="1" complete="0" expand="true"/>
+            <task id="72" name="Fin del CIERRE del Proyecto" color="#8cb6ce" meeting="true" start="2015-06-15" duration="0" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Julián Federico  Gómez Martínez" function="SoftwareDevelopment:5" contacts="fede12354@gmail.com" phone="0994568930"/>
+        <resource id="1" name=" Elda Andrea  López Garay" function="SoftwareDevelopment:2" contacts="melloncollieandme@gmail.com" phone="0991805437"/>
+        <resource id="2" name="Jesús María Javier Oviedo Riquelme " function="SoftwareDevelopment:2" contacts="j92riquelme@gmail.com" phone="0986218347"/>
+    </resources>
+    <allocations>
+        <allocation task-id="169" resource-id="0" function="SoftwareDevelopment:5" responsible="true" load="100.0"/>
+        <allocation task-id="293" resource-id="0" function="SoftwareDevelopment:5" responsible="true" load="100.0"/>
+        <allocation task-id="40" resource-id="0" function="SoftwareDevelopment:5" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="226" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="435" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="2" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="2" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="2" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="360" resource-id="2" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="454" resource-id="2" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <taskdisplaycolumns>
+        <displaycolumn property-id="tpd2" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd9" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd8" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd6" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd5" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd4" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd10" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd11" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd1" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd7" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd0" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd3" order="0" width="357" visible="true"/>
+    </taskdisplaycolumns>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>

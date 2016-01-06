@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2015-04-08" view-index="0" gantt-divider-location="537" resource-divider-location="395" version="2.0" locale="es">
+    <description/>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="100" order="0"/>
+        <option id="taskLabelUp" value="advancement"/>
+        <option id="taskLabelDown" value=""/>
+        <option id="taskLabelLeft" value="name"/>
+        <option id="taskLabelRight" value="resources"/>
+        <timeline><![CDATA[360]]></timeline>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="50" order="0"/>
+        <field id="1" name="Función" width="49" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <calendar id="1" name="default">
+                <default-week sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+                <only-show-weekends value="false"/>
+                <overriden-day-types/>
+                <days/>
+            </calendar>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="291" name="INICIO CARRERA" color="#8cb6ce" meeting="true" start="2015-04-09" duration="0" complete="0" expand="true"/>
+        <task id="4" name="PRIMER SEMESTRE" color="#000000" meeting="false" start="2015-04-10" duration="1" complete="100" expand="true">
+            <task id="0" name="ÁLGEBRA" color="#8cb6ce" meeting="false" start="2015-04-10" duration="1" complete="100" expand="true">
+                <depend id="7" type="2" difference="0" hardness="Rubber"/>
+                <depend id="253" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="3" name="COMUNICACIÓN: ORAL Y ESCRITA" color="#8cb6ce" meeting="false" start="2015-04-10" duration="1" complete="100" expand="true"/>
+            <task id="1" name="INTRODUCCIÓN A LA INFORMÁTICA" color="#8cb6ce" meeting="false" start="2015-04-10" duration="1" complete="100" expand="true">
+                <depend id="20" type="2" difference="0" hardness="Rubber"/>
+                <depend id="63" type="2" difference="0" hardness="Rubber"/>
+                <depend id="130" type="2" difference="0" hardness="Rubber"/>
+                <depend id="175" type="2" difference="0" hardness="Rubber"/>
+                <depend id="206" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="2" name="INTRODUCCIÓN A LAS TECNOLOGÍAS DE INFORMACIÓN Y LA COMUNICACIÓN" color="#8cb6ce" meeting="false" start="2015-04-10" duration="1" complete="100" expand="true"/>
+            <task id="35" name="FIN PRIMER SEMESTRE" color="#8cb6ce" meeting="true" start="2015-04-10" duration="0" complete="100" expand="true"/>
+        </task>
+        <task id="5" name="SEGUNDO SEMESTRE" color="#000000" meeting="false" start="2015-04-13" duration="1" complete="100" expand="true">
+            <task id="7" name="MATEMÁTICAS DISCRETAS" color="#00cc33" meeting="false" start="2015-04-13" duration="1" complete="100" expand="true"/>
+            <task id="6" name="INTRODUCCIÓN AL DISEÑO Y CONSTRUCCIÓN DE PÁGINAS WEB" color="#00cc33" meeting="false" start="2015-04-13" duration="1" complete="100" expand="true">
+                <depend id="230" type="2" difference="0" hardness="Rubber"/>
+                <depend id="318" type="2" difference="0" hardness="Rubber"/>
+                <depend id="331" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="8" name="INTRODUCCIÓN A LOS SISTEMAS DE GESTIÓN DE BASES DE DATOS" color="#00cc33" meeting="false" start="2015-04-13" duration="1" complete="100" expand="true">
+                <depend id="256" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="9" name="LÓGICA DE PROGRAMACIÓN DE COMPUTADORAS I" color="#00cc33" meeting="false" start="2015-04-13" duration="1" complete="100" expand="true">
+                <depend id="67" type="2" difference="0" hardness="Rubber"/>
+                <depend id="80" type="2" difference="0" hardness="Rubber"/>
+                <depend id="142" type="2" difference="0" hardness="Rubber"/>
+                <depend id="177" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="38" name="FIN SEGUNDO SEMESTRE/PRIMER AÑO" color="#8cb6ce" meeting="true" start="2015-04-13" duration="0" complete="100" expand="true"/>
+        </task>
+        <task id="19" name="TERCER SEMESTRE" color="#000000" meeting="false" start="2015-04-15" duration="1" complete="60" expand="true">
+            <task id="20" name="INTRODUCCIÓN A LA COMUNICACIÓN DE DATOS" color="#8cb6ce" meeting="false" start="2015-04-15" duration="1" complete="100" expand="true">
+                <depend id="321" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="63" name="INTRODUCCIÓN A LA PROGRAMACIÓN ORIENTADA POR EVENTOS - VISUAL BASIC" color="#8cb6ce" meeting="false" start="2015-04-15" duration="1" complete="0" expand="true">
+                <depend id="149" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="67" name="INTRODUCCIÓN A LA PROGRAMACIÓN ORIENTADA POR OBJETOS - JAVA" color="#8cb6ce" meeting="false" start="2015-04-15" duration="1" complete="100" expand="true">
+                <depend id="201" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="80" name="LÓGICA DE PROGRAMACIÓN DE COMPUTADORAS II" color="#8cb6ce" meeting="false" start="2015-04-15" duration="1" complete="100" expand="true">
+                <depend id="134" type="2" difference="0" hardness="Strong"/>
+                <depend id="149" type="2" difference="0" hardness="Rubber"/>
+                <depend id="201" type="2" difference="0" hardness="Rubber"/>
+                <depend id="230" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="107" name="FIN TERCER SEMESTRE" color="#8cb6ce" meeting="true" start="2015-04-15" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="105" name="CUARTO SEMESTRE" color="#000000" meeting="false" start="2015-04-16" duration="1" complete="50" expand="true">
+            <task id="130" name="ANÁLISIS Y DISEÑO DE SISTEMAS INFORMÁTICOS I" color="#00cc33" meeting="false" start="2015-04-16" duration="1" complete="0" expand="true">
+                <depend id="157" type="2" difference="0" hardness="Strong"/>
+                <depend id="396" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="134" name="ESTRUCTURAS DE DATOS Y ARCHIVOS" color="#00cc33" meeting="false" start="2015-04-16" duration="1" complete="100" expand="true">
+                <depend id="225" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="142" name="INTRODUCCIÓN A LA PROGRAMACIÓN ESTRUCTURADA - COBOL" color="#00cc33" meeting="false" start="2015-04-16" duration="1" complete="100" expand="true"/>
+            <task id="149" name="PROGRAMACIÓN ORIENTADA POR EVENTOS AVANZADA - V. BASIC" color="#00cc33" meeting="false" start="2015-04-16" duration="1" complete="0" expand="true"/>
+            <task id="154" name="FIN CUARTO SEMESTRE/SEGUNDO AÑO" color="#8cb6ce" meeting="true" start="2015-04-16" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="156" name="QUINTO SEMESTRE" color="#000000" meeting="false" start="2015-04-17" duration="1" complete="25" expand="true">
+            <task id="157" name="ANÁLISIS Y DISEÑO DE SISTEMAS INFORMÁTICOS II" color="#8cb6ce" meeting="false" start="2015-04-17" duration="1" complete="0" expand="true">
+                <depend id="221" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="175" name="GESTIÓN DE PROYECTOS INFORMÁTICOS" color="#8cb6ce" meeting="false" start="2015-04-17" duration="1" complete="25" expand="true">
+                <depend id="385" type="2" difference="0" hardness="Rubber"/>
+                <depend id="396" type="2" difference="0" hardness="Rubber"/>
+                <depend id="403" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="177" name="INTRODUCCIÓN A LA PROGRAMACIÓN ORIENTADA POR OBJETOS - C#" color="#8cb6ce" meeting="false" start="2015-04-17" duration="1" complete="100" expand="true"/>
+            <task id="201" name="PROGRAMACIÓN ORIENTADA POR OBJETOS AVANZADA - JAVA" color="#8cb6ce" meeting="false" start="2015-04-17" duration="1" complete="0" expand="true"/>
+            <task id="197" name="FIN QUINTO SEMESTRE" color="#8cb6ce" meeting="true" start="2015-04-17" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="205" name="SEXTO SEMESTRE" color="#8cb6ce" meeting="false" start="2015-04-20" duration="1" complete="16" expand="true">
+            <task id="206" name="ADMINISTRACIÓN DE REDES DE ÁREA LOCAL" color="#00cc33" meeting="false" start="2015-04-20" duration="1" complete="0" expand="true"/>
+            <task id="221" name="ANÁLISIS Y DISEÑO DE SISTEMAS INFORMÁTICOS III" color="#00cc33" meeting="false" start="2015-04-20" duration="1" complete="0" expand="true"/>
+            <task id="225" name="DISEÑO DE BASES DE DATOS RELACIONALES" color="#00cc33" meeting="false" start="2015-04-20" duration="1" complete="0" expand="true">
+                <depend id="268" type="2" difference="0" hardness="Rubber"/>
+                <depend id="360" type="2" difference="0" hardness="Rubber"/>
+                <depend id="395" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="230" name="DISEÑO Y CONSTRUCCIÓN DE PÁGINAS WEB AVANZADO" color="#00cc33" meeting="false" start="2015-04-20" duration="1" complete="0" expand="true"/>
+            <task id="240" name="TALLER DE SISTEMAS OPERATIVOS MULTIUSUARIO - LINUX" color="#00cc33" meeting="false" start="2015-04-20" duration="1" complete="100" expand="true"/>
+            <task id="243" name="FIN SEXTO SEMESTRE/TERCER AÑO" color="#8cb6ce" meeting="true" start="2015-04-20" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="250" name="SÉPTIMO SEMESTRE" color="#000000" meeting="false" start="2015-04-22" duration="1" complete="0" expand="true">
+            <task id="318" name="COMERCIO ELECTRÓNICO" color="#8cb6ce" meeting="false" start="2015-04-22" duration="1" complete="0" expand="true"/>
+            <task id="321" name="COMUNICACIÓN DE DATOS AVANZADA" color="#8cb6ce" meeting="false" start="2015-04-22" duration="1" complete="0" expand="true"/>
+            <task id="253" name="ESTADÍSTICA DESCRIPTIVA E INFERENCIAL" color="#8cb6ce" meeting="false" start="2015-04-22" duration="1" complete="0" expand="true"/>
+            <task id="331" name="GESTIÓN DE SITIOS WEB" color="#8cb6ce" meeting="false" start="2015-04-22" duration="1" complete="0" expand="true"/>
+            <task id="360" name="PROGRAMACIÓN SQL" color="#8cb6ce" meeting="false" start="2015-04-22" duration="1" complete="0" expand="true">
+                <depend id="273" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="256" name="SISTEMAS DE GESTIÓN DE BASES DE DATOS AVANZADOS" color="#8cb6ce" meeting="false" start="2015-04-22" duration="1" complete="0" expand="true"/>
+            <task id="257" name="FIN SÉPTIMO SEMESTRE" color="#8cb6ce" meeting="true" start="2015-04-22" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="267" name="OCTAVO SEMESTRE" color="#000000" meeting="false" start="2015-04-23" duration="1" complete="0" expand="true">
+            <task id="268" name="ADMINISTRACIÓN DE BASES DE DATOS" color="#00cc33" meeting="false" start="2015-04-23" duration="1" complete="0" expand="true"/>
+            <task id="385" name="CALIDAD DE SOFTWARE" color="#00cc33" meeting="false" start="2015-04-23" duration="1" complete="0" expand="true"/>
+            <task id="395" name="DATA WAREHOUSING Y DATA MINNING" color="#00cc33" meeting="false" start="2015-04-23" duration="1" complete="0" expand="true"/>
+            <task id="396" name="INTERFACE HOMBRE-MÁQUINA" color="#00cc33" meeting="false" start="2015-04-23" duration="1" complete="0" expand="true"/>
+            <task id="403" name="SEGURIDAD Y AUDITORÍA DE SISTEMAS" color="#00cc33" meeting="false" start="2015-04-23" duration="1" complete="0" expand="true"/>
+            <task id="273" name="SISTEMAS CLIENTE/SERVIDOR" color="#00cc33" meeting="false" start="2015-04-23" duration="1" complete="0" expand="true"/>
+            <task id="274" name="FIN OCTAVO SEMESTRE/CUARTO AÑO" color="#8cb6ce" meeting="true" start="2015-04-23" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="294" name="CONGRESO Y SEMINARIO" meeting="false" start="2015-04-10" duration="10" complete="50" expand="true">
+            <task id="296" name="CONGRESO 1" color="#8cb6ce" meeting="false" start="2015-04-10" duration="1" complete="100" expand="true"/>
+            <task id="297" name="CONGRESO 2" color="#8cb6ce" meeting="false" start="2015-04-13" duration="1" complete="100" expand="true"/>
+            <task id="298" name="CONGRESO 3" color="#8cb6ce" meeting="false" start="2015-04-15" duration="1" complete="100" expand="true"/>
+            <task id="299" name="CONGRESO 4" color="#8cb6ce" meeting="false" start="2015-04-16" duration="1" complete="100" expand="true"/>
+            <task id="314" name="CONGRESO 5" color="#8cb6ce" meeting="false" start="2015-04-17" duration="1" complete="0" expand="true"/>
+            <task id="315" name="CONGRESO 6" color="#8cb6ce" meeting="false" start="2015-04-20" duration="1" complete="0" expand="true"/>
+            <task id="316" name="CONGRESO 7" color="#8cb6ce" meeting="false" start="2015-04-22" duration="1" complete="0" expand="true"/>
+            <task id="317" name="CONGRESO 8" color="#8cb6ce" meeting="false" start="2015-04-23" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="293" name="FIN CARRERA" color="#8cb6ce" meeting="true" start="2015-04-24" duration="0" complete="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Jesús Maria Javier Oviedo Riquelme" function="Default:1" contacts="j92riquelme@gmail.com" phone="0986218347"/>
+    </resources>
+    <allocations>
+        <allocation task-id="4" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="105" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="156" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="205" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="250" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="267" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <taskdisplaycolumns>
+        <displaycolumn property-id="tpd2" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd9" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd8" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd6" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd5" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd4" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd10" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd11" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd1" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd7" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd0" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd3" order="0" width="518" visible="true"/>
+    </taskdisplaycolumns>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
