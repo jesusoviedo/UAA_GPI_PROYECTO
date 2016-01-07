@@ -952,7 +952,11 @@ namespace Proyecto_GPI_GOLF
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            Process.Start(this.manual_dir);
+            try {
+                Process.Start(this.manual_dir);
+            } catch (Exception ex) {
+                MessageBox.Show(ex.Message);
+            }
         }   
    
         public static int aaaa()
