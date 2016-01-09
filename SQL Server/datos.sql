@@ -55,7 +55,7 @@ insert into TipoDocumento values ('DOCUMENTO BRASILEÑO','DB');
 insert into TipoPersona values ('Profesor');
 insert into TipoPersona values ('Decano');
 
---para que pueda ingresar el Admin
+--para que pueda ingresar el Admin, OJO una vez creado ya no se puede borrar este usuario
 insert into Usuario values ('Admin',dbo.fu_encriptar_contrasenia(1992),'A',0,'05/01/2016','Admin','05/01/2016','Admin','05/01/2016');
 
 insert into UsuarioPantalla values ('Admin','FRM_MENU_PRI','A','Admin','05/01/2016','Admin','05/01/2016');

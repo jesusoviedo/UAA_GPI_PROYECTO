@@ -57,7 +57,7 @@ Begin
 			end
 		
 			if @v_TipoEvento ='I' and 
-			exists (select * from Usuario u where u.CodUsuario=@v_usuario and dbo.fu_desencriptar_contrasenia(u.Clave)!=@v_clave and u.Estado in ('A'))
+			exists (select * from Usuario u where u.CodUsuario=@v_usuario and dbo.fu_encriptar_contrasenia(@v_clave)!= u.Clave and u.Estado in ('A'))
 			Begin
 				update Usuario
 				set CantidadIntento = (CantidadIntento + 1), FechaUltimoIntento = getDate()
@@ -75,6 +75,10 @@ Begin
 				Raiserror (@vMsgError, 16, 1);
 				Select @vNroError =1;
 			end
+			--borra la cantidad de intentos si tiene ya cargado
+			update Usuario
+					set CantidadIntento = 0
+					where CodUsuario=@v_usuario;
 		end
 		Commit Transaction --al final del bloque
 		

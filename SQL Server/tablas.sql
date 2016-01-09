@@ -70,7 +70,7 @@ create table Persona  (CodPersona int IDENTITY(1,1),
 					   UsuarioInsercion varchar(50),
 					   FechaInsercion date,
 					   UsuarioModificacion varchar(50),
-					   FechaModificacion date
+					   FechaModificacion date,
 Constraint PK_Persona_CodPersona primary key (CodPersona),
 Constraint UK_Persona_Documento_CodTipoDocumento unique(Documento,CodTipoDocumento),
 Constraint FK_Persona_CodTipoDocumento foreign key (CodTipoDocumento) references TipoDocumento (CodTipoDocumento),
@@ -89,7 +89,7 @@ create table UsuarioPantalla (CodUsuario varchar(50) not null,
 					  UsuarioInsercion varchar(50),
 					  FechaInsercion date,
 					  UsuarioModificacion varchar(50),
-					  FechaModificacion date
+					  FechaModificacion date,
 Constraint PK_UsuarioPantalla_CodPersona_CodPantalla primary key (CodUsuario,CodPantalla),
 Constraint FK_UsuarioPantalla_CodUsuario foreign key (CodUsuario) references Usuario (CodUsuario),
 Constraint FK_UsuarioPantalla_CodPantalla foreign key (CodPantalla) references Pantalla (CodPantalla),
@@ -112,7 +112,7 @@ create table UsuarioFacultad (CodUsuario varchar(50) not null,
 					  UsuarioInsercion varchar(50),
 					  FechaInsercion date,
 					  UsuarioModificacion varchar(50),
-					  FechaModificacion date
+					  FechaModificacion date,
 Constraint PK_UsuarioCarrera_CodUsuario_CodFacultad primary key (CodUsuario,CodFacultad),
 Constraint FK_UsuarioCarrera_CodUsuario foreign key (CodUsuario) references Usuario (CodUsuario),
 Constraint FK_UsuarioCarrera_CodFacultad foreign key (CodFacultad) references Facultad (CodFacultad),
@@ -151,7 +151,7 @@ Constraint UK_Editorial_NombreEditorial unique(NombreEditorial),
 Constraint FK_Editorial_PaisEditorial foreign key (PaisEditorial) references Pais (CodPais),
 Constraint CK_Editorial_Estado check (Estado in('A','I')),
 Constraint FK_Editorial_UsuarioInsercion foreign key (UsuarioInsercion) references Usuario (CodUsuario),
-Constraint FK_Editorial_UsuarioModificacion foreign key (UsuarioModificacion) references Usuario (CodUsuario),
+Constraint FK_Editorial_UsuarioModificacion foreign key (UsuarioModificacion) references Usuario (CodUsuario)
 );
 
 --14 creamos la tabla Libro
@@ -176,7 +176,7 @@ Constraint FK_Libro_CodIdioma foreign key (CodIdioma) references Idioma (CodIdio
 Constraint UK_Libro_ISBN unique(ISBN),
 Constraint CK_Libro_Estado check (Estado in('A','I')),
 Constraint FK_Libro_UsuarioInsercion foreign key (UsuarioInsercion) references Usuario (CodUsuario),
-Constraint FK_Libro_UsuarioModificacion foreign key (UsuarioModificacion) references Usuario (CodUsuario),
+Constraint FK_Libro_UsuarioModificacion foreign key (UsuarioModificacion) references Usuario (CodUsuario)
 );
 
 --15 creamos la tabla Carrera
@@ -195,7 +195,7 @@ Constraint FK_Carrera_CodUniversisdad foreign key (CodFacultad) references Facul
 Constraint UK_Carrera_NombreCarrera_Promocion unique(NombreCarrera,Promocion),
 Constraint CK_Carrera_Estado check (Estado in('A','I')),
 Constraint FK_Carrera_UsuarioInsercion foreign key (UsuarioInsercion) references Usuario (CodUsuario),
-Constraint FK_Carrera_UsuarioModificacion foreign key (UsuarioModificacion) references Usuario (CodUsuario),
+Constraint FK_Carrera_UsuarioModificacion foreign key (UsuarioModificacion) references Usuario (CodUsuario)
 );
 
 --update Usuario set Estado='A', CantidadIntento=0 where CodUsuario='jo712'
@@ -217,7 +217,7 @@ Constraint UK_Materia_ClaveMateria unique(ClaveMateria),
 Constraint FK_Materia_FacultadMateria foreign key (FacultadMateria) references Facultad (CodFacultad),
 Constraint CK_Materia_Estado check (Estado in('A','I')),
 Constraint FK_Materia_UsuarioInsercion foreign key (UsuarioInsercion) references Usuario (CodUsuario),
-Constraint FK_Materia_UsuarioModificacion foreign key (UsuarioModificacion) references Usuario (CodUsuario),
+Constraint FK_Materia_UsuarioModificacion foreign key (UsuarioModificacion) references Usuario (CodUsuario)
 );
 
 --17 creamos la tabla CarreraMateria
@@ -236,7 +236,7 @@ Constraint FK_CarreraMateria_CodCarrera foreign key (CodCarrera) references Carr
 Constraint FK_CarreraMateria_CodMateria foreign key (CodMateria) references Materia (CodMateria),
 Constraint CK_CarreraMateria_Estado check (Estado in('A','I')),
 Constraint FK_CarreraMateria_UsuarioInsercion foreign key (UsuarioInsercion) references Usuario (CodUsuario),
-Constraint FK_CarreraMateria_UsuarioModificacion foreign key (UsuarioModificacion) references Usuario (CodUsuario),
+Constraint FK_CarreraMateria_UsuarioModificacion foreign key (UsuarioModificacion) references Usuario (CodUsuario)
 );
 
 ------------3 entrega--------------
@@ -284,5 +284,5 @@ Constraint FK_MateriaLibro_UsuarioSolicitante foreign key (UsuarioSolicitante) r
 Constraint FK_MateriaLibro_UsuarioAutorizador foreign key (UsuarioAutorizador) references Usuario (CodUsuario),
 Constraint FK_MateriaLibro_UsuarioInactivador foreign key (UsuarioInactivador) references Usuario (CodUsuario),
 Constraint FK_MateriaLibro_UsuarioInsercion foreign key (UsuarioInsercion) references Usuario (CodUsuario),
-Constraint FK_MateriaLibro_UsuarioModificacion foreign key (UsuarioModificacion) references Usuario (CodUsuario),
+Constraint FK_MateriaLibro_UsuarioModificacion foreign key (UsuarioModificacion) references Usuario (CodUsuario)
 );
