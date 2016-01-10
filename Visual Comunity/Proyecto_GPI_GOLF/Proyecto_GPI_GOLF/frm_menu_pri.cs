@@ -11,13 +11,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Usuario_logica;
+using System.IO;
 
 namespace Proyecto_GPI_GOLF
 {
     public partial class frm_menu_pri : Form
     {
         private string usuario {get; set;}
-        private string manual_dir = "C:\\Manual de Usuario.pdf";
 
         public frm_menu_pri()
         {
@@ -231,20 +231,6 @@ namespace Proyecto_GPI_GOLF
             }
             this.mostrar_Pantalla();
         }
-
-        //private void men_cerrar_sesion_Click(object sender, EventArgs e)
-        //{
-        //    if ((
-        //        MessageBox.Show("¿Desea cerrar su sesión?",
-        //        "Cerrar Sesión",
-        //        MessageBoxButtons.YesNo,
-        //        MessageBoxIcon.Question) == DialogResult.Yes))
-        //    {
-        //        this.Close();
-        //    }
-        //}
-
-
 
         private void sub_men_carrera_agr_Click(object sender, EventArgs e)
         {
@@ -793,11 +779,6 @@ namespace Proyecto_GPI_GOLF
             this.mostrar_Pantalla();
         }
 
-        //private void frm_menu_pri_FormClosed(object sender, CancelEventArgs e)
-        //{
-            
-        //}
-
         //solicitar bibliografia
         private void sub_men_bibliografia_sol_Click(object sender, EventArgs e)
         {
@@ -940,28 +921,34 @@ namespace Proyecto_GPI_GOLF
 
         private void frm_menu_pri_KeyPress(object sender, KeyPressEventArgs e)
         {
-            
-           if (e.KeyChar == Convert.ToChar(Keys.M))
+            if (e.KeyChar == Convert.ToChar(Keys.M))
             {
-            //aqui se coloca la direccion del archivo y listo 
-                Process.Start(this.manual_dir);
+                try
+                {
+                    //obtengo el directorio y nombre del manual y lo abro
+                    Process.Start(this.returnPath());
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
-            
-        
         }        
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
             try {
-                Process.Start(this.manual_dir);
+                //obtengo el directorio y nombre del manual y lo abro
+                Process.Start(returnPath());
             } catch (Exception ex) {
                 MessageBox.Show(ex.Message);
             }
         }   
-   
-        public static int aaaa()
+
+        private string returnPath()
         {
-            return 1;
+            string manual_nom = "Manual de Usuario.pdf";
+            return Path.Combine(Directory.GetCurrentDirectory(), manual_nom); ;
         }
 
     }
